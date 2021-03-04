@@ -1,0 +1,371 @@
+@import "src/styles/vars";
+@import "src/styles/breackpoints";
+
+#PraticalesInfos {
+    width: 100%;
+    margin-top: 3em;
+
+    &-ContainerMenu {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &-ContainerMenuCircle {
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+
+        @include breakpoint(littlebig-papa-bear) {
+            width: 33%;
+        }
+
+        @include breakpoint(papa-bear) {
+            width: 35%;
+        }
+
+        @include breakpoint(papabro-bear) {
+            width: 37%;
+        }
+
+        @include breakpoint(mama-bear) {
+            width: 27%;
+        }
+
+        @include breakpoint(aunt-bear) {
+            width: 26%;
+        }
+
+        @include breakpoint(uncle-bear) {
+            width: 29%;
+        }
+
+        @include breakpoint(babydouble-bear) {
+            width: 31%;
+        }
+
+        @include breakpoint(baby-bear) {
+            width: 33%;
+        }
+
+        @include breakpoint(babybaby-bear) {
+            width: 37%;
+        }
+
+        @include breakpoint(littlebaby-bear) {
+            width: 45%;
+        }
+    }
+
+    &-ContainerTitle {
+        width: 100%;
+    }
+
+    // body part
+    &-ContainerBody {
+        width: 100%;
+        margin-bottom: 6em;
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+    }
+
+    &-ContainerInfos {
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        @include breakpoint(aunt-bear) {
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            flex-direction: column;
+        }
+    }
+
+    &-ContainerLeft {
+        width: 30%;
+        border-right: 1px solid $colorTextTitle;
+        height: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+
+        @include breakpoint(aunt-bear) {
+            width: 80%;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            margin-bottom: 3em;
+            border-right: none;
+        }
+    }
+
+    &-ContainerCenter {
+        width: 30%;
+        border-right: 1px solid $colorTextTitle;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+
+        @include breakpoint(aunt-bear) {
+            width: 80%;
+            margin-bottom: 3em;
+            border-right: none;
+        }
+    }
+
+    &-ContainerRight {
+        width: 30%;
+        justify-content: flex-end;
+        align-items: flex-end;
+        align-content: flex-end;
+
+        @include breakpoint(aunt-bear) {
+            width: 80%;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            margin-bottom: 3em;
+        }
+    }
+
+
+    &-title {
+        font-family: "ParisianStd";
+        font-size: 1.3em;
+        color: $colorTextTitle;
+        text-align: center;
+        text-transform: uppercase;
+        padding-top: 0.8em;
+    }
+
+    &-subtitle {
+        font-family: "ParisianStd";
+        font-size: 1.8em;
+        text-align: center;
+        color: $backgroundBubbleNavbarHover;
+    }
+
+    &-paragraph {
+        font-family: "Open sans", sans-serif;
+        font-size: 1em;
+        padding: 0em 1.2em;
+        text-align: center;
+        line-height: 1.8em;
+        letter-spacing: 0.1em;
+        color: $colorTextTitle;
+
+        @include breakpoint(aunt-bear) {
+            font-size: 1em;
+        }
+
+        @include breakpoint(uncle-bear) {
+            font-size: 1em;
+        }
+
+        @include breakpoint(babydouble-bear) {
+            font-size: 1em;
+        }
+
+        @include breakpoint(baby-bear) {
+            font-size: 1em;
+        }
+
+        @include breakpoint(babybaby-bear) {
+            font-size: 0.8em;
+        }
+
+        @include breakpoint(littlebaby-bear) {
+            font-size: 0.6em;
+        }
+    }
+
+    &-titleparagraph {
+        font-family: "ParisianStd";
+        font-size: 2em;
+        text-align: center;
+        text-transform: uppercase;
+        color: $colorTextNavbar;
+
+        @include breakpoint(aunt-bear) {
+            font-size: 1.6em;
+        }
+
+        @include breakpoint(uncle-bear) {
+            font-size: 1.6em;
+        }
+
+        @include breakpoint(babydouble-bear) {
+            font-size: 1.6em;
+        }
+
+        @include breakpoint(baby-bear) {
+            font-size: 1.6em;
+        }
+
+        @include breakpoint(babybaby-bear) {
+            font-size: 1.2em;
+        }
+
+        @include breakpoint(littlebaby-bear) {
+            font-size: 1.1em;
+        }
+    }
+
+    &-span {
+        font-weight: 600;
+        color: $backgroundBubbleNavbarHover;
+    }
+
+    //part menu
+    &-FigureFullCircle-Menu {
+        width: 8%;
+        position: absolute;
+
+        @include breakpoint(littlebig-papa-bear) {
+            width: 15%;
+        }
+
+        @include breakpoint(papa-bear) {
+            width: 15%;
+        }
+
+        @include breakpoint(papabro-bear) {
+            width: 15%;
+        }
+
+        @include breakpoint(mama-bear) {
+            width: 15%;
+        }
+
+        @include breakpoint(aunt-bear) {
+            width: 17%;
+        }
+
+        @include breakpoint(uncle-bear) {
+            width: 20%;
+        }
+
+        @include breakpoint(babydouble-bear) {
+            width: 20%;
+        }
+
+        @include breakpoint(baby-bear) {
+            width: 20%;
+        }
+
+        @include breakpoint(babybaby-bear) {
+            width: 20%;
+        }
+
+        @include breakpoint(littlebaby-bear) {
+            width: 25%;
+        }
+    }
+
+    &-titleMenu {
+        font-family: "ParisianStd";
+        font-size: 0.9em;
+        z-index: 6;
+        color: $colorTextNavbar;
+        cursor: pointer;
+
+    }
+
+    &-FigureLineCircle-Menu {
+        width: 43%;
+        position: relative;
+
+        @include breakpoint(mama-bear) {
+            width: 58%;
+        }
+
+        @include breakpoint(aunt-bear) {
+            width: 70%;
+        }
+
+        @include breakpoint(uncle-bear) {
+            width: 100%;
+        }
+
+        @include breakpoint(babydouble-bear) {
+            width: 100%;
+        }
+
+        @include breakpoint(baby-bear) {
+            width: 100%;
+        }
+
+        @include breakpoint(babybaby-bear) {
+            width: 100%;
+        }
+
+        @include breakpoint(littlebaby-bear) {
+            width: 100%;
+        }
+
+    }
+
+    &-circleMenu {
+        fill: $backgroundBubbleNavbar;
+        opacity: 0.5;
+        transition: all 0.5s ease-in-out;
+    }
+
+    &-circleMenu:hover {
+        fill: $backgroundBubbleNavbarHover;
+        cursor: pointer;
+        transform: scale(1.03);
+    }
+
+    &-ul {}
+
+    &-list {
+        font-family: "Open sans", sans-serif;
+        margin: 0.6em 4em;
+        font-size: 1.1em;
+        text-align: left;
+        line-height: 2.8em;
+        vertical-align: middle;
+        color: $colorTextTitle;
+        list-style-image: url("./assets/rond7.png");
+    }
+
+    //animation part
+
+    @mixin linear-animation($duration) {
+        $name: linear-#{unique-id()};
+
+        @keyframes #{$name} {
+            @content;
+        }
+
+        animation-name: $name;
+        animation-duration: $duration;
+        animation-iteration-count: infinite;
+    }
+
+    &-lineCircleMenu {
+        fill: transparent;
+        stroke: $backgroundStrokeLine;
+        stroke-width: 0.01em;
+
+        @include linear-animation(7s) {
+            from {
+                transform: rotate(0deg);
+                transform-origin: 50px 50px;
+            }
+
+            to {
+                transform: rotate(-360deg);
+                transform-origin: 50px 53px;
+            }
+        }
+    }
+}

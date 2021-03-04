@@ -1,0 +1,105 @@
+@import "src/styles/vars";
+@import "src/styles/breackpoints";
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $backgroundContainerNav;
+    opacity: 0.9;
+    height: 6em;
+    z-index: 1000 !important;
+
+    @include breakpoint(aunt-bear) {
+        height: 5em;
+    }
+
+    @include breakpoint(uncle-bear) {
+        height: 5em;
+    }
+
+    @include breakpoint(babydouble-bear) {
+        height: 4em;
+    }
+
+    @include breakpoint(baby-bear) {
+        height: 4em;
+
+    }
+
+    @include breakpoint(babybaby-bear) {
+        height: 4em;
+    }
+
+    @include breakpoint(littlebaby-bear) {
+        height: 4em;
+    }
+
+    &-navlink {
+        font-size: 1.2em;
+        font-family: 'Alegreya Sans SC', sans-serif;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: $colorTextNavbar;
+        text-decoration: none;
+
+        @include breakpoint(papa-bear) {
+            font-size: 0.9em;
+        }
+
+        @include breakpoint(mama-bear) {
+            font-size: 0.7em;
+        }
+
+        @include breakpoint(aunt-bear) {
+            visibility: collapse;
+        }
+
+        @include breakpoint(baby-bear) {
+            visibility: collapse;
+        }
+    }
+
+    &-navigation {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    &-navigationItems {
+        width: 80%;
+        height: 40%;
+        max-width: 70%;
+        min-height: 40%;
+    }
+
+    &-navigationItems ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+    &-navlink:hover,
+    &-navlink:active {
+        text-decoration: none;
+        color: $backgroundStrokeLine;
+        opacity: 0.8;
+
+    }
+
+    li a:after {
+        content: '';
+        display: block;
+        background: transparent;
+        transition: width .5s ease, background-color .5s ease;
+    }
+
+    li a:hover:after {
+        width: 90%;
+        background: $backgroundStrokeLine;
+    }
+}

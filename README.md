@@ -1,2 +1,3 @@
-# Sushy-Schlomoff
-Site vitrine de Sophrologie caycédienne et Réflexologie plantaire
+# Site vitrine de sophrologie et reflexologie
+
+## dependencies
